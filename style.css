@@ -124,6 +124,7 @@ form label {
 
 form select,
 form input {
+  flex-shrink: 1;
   width: 180px;
 }
 
@@ -187,11 +188,13 @@ footer p {
   .form-group {
     flex-direction: column;
     align-items: baseline;
+    flex-basis: calc(20% - 10px);
   }
-  
+
   form select,
   form input {
-    width: 100%;
+    width: 0;
+    min-width: 100%;
   }
 
   #about {
